@@ -10,7 +10,7 @@ if [[ -f .devcontainer/user/on_setup.sh ]]; then
 fi
 
 # Install dependencies
-pipenv sync --dev
+pipenv sync --dev --python=3.8
 
 
 # Run user post_setup script if any

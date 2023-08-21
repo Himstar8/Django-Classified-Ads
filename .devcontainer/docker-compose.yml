@@ -10,10 +10,12 @@ services:
       TESTING: 'True'
       DEBUG: 'True'
     volumes:
-      - ..:/effigeocode
+      - ..:/classifiedads
       - classifiedads-data:/data
     networks:
       - default
+    expose:
+      - "8000"
     ports:
       - "8000:8000"
 
